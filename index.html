@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио Дизайнера</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0e0e10;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      animation: fadeIn 1.5s ease;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      opacity: 0.85;
+    }
+
+    .btn {
+      margin-top: 30px;
+      background: white;
+      color: #1f1c2c;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #f1f1f1;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 25px;
+      transition: 0.3s;
+      text-align: left;
+    }
+
+    .card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- 🔹 Замени ссылку ниже на своё фото (или добавь позже через GitHub) -->
+    <img src="https://via.placeholder.com/140" alt="Моё фото">
+    <h1>Привет, я <span style="color:#00e6ff;">[Твоё имя]</span></h1>
+    <p>Дизайнер / Креативщик / Веб-визуалист</p>
+    <button class="btn" onclick="alert('Связаться: твойemail@gmail.com')">Связаться</button>
+  </header>
+
+  <section id="about">
+    <h2>Обо мне</h2>
+    <p>Я создаю стильные визуалы, сайты и дизайн-проекты.  
+       Люблю минимализм, плавные переходы и современные интерфейсы.  
+       Работаю с цветом, типографикой и UX-дизайном.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Мои проекты</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🎨 Дизайн лендинга</h3>
+        <p>Современный минималистичный сайт для бренда одежды.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Веб-интерфейс</h3>
+        <p>UI-дизайн для панели управления приложением.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Мобильное приложение</h3>
+        <p>Концепт интерфейса для социальной платформы.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 [Твоё имя] — дизайнер. Сделано с ❤️ через GitHub Pages</p>
+  </footer>
+</body>
+</html>
